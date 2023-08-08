@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Jost:wght@300&family=Permanent+Marker&family=Ubuntu:ital,wght@0,500;1,500&display=swap");
+body {
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10em;
+  width: 100%;
+  box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+}
+
+.navlink {
+  font-size: 1.4em;
+  text-decoration: none;
+  margin: 0 1.2em;
+  font-weight: 900;
+  color: #708793;
+}
+
+.logo {
+  height: 88%;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+}
+
+.cat-nav {
+  margin: 1.3em;
+  color: #708793;
+  font-size: 1.4em;
+  font-weight: 900;
+  border: none;
+  background-color: white;
+  font-family: "Jost", sans-serif;
+  cursor: pointer;
+}
+
+.right {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tile {
+  object-fit: cover;
+}
+
+.pic {
+  height: 30em;
+  width: 20em;
+  border-radius: 2%;
+  margin: 1em 2em;
+  box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+}
+
+/* .background {
+  background-image: url(./assets/background.jpg);
+} */
