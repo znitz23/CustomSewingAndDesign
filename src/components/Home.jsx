@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import { Carousel } from "./Carousel";
 
 const images = [
+  "/assets/d-6.jpg",
   "/assets/d-1.jpg",
   "/assets/d-2.jpg",
   "/assets/d-3.jpg",
   "/assets/d-4.jpg",
   "/assets/d-5.jpg",
-  "/assets/d-6.jpg",
   "/assets/pc-1.jpg",
   "/assets/pc-2.jpg",
   "/assets/pc-3.jpg",
@@ -34,13 +35,13 @@ const images = [
 ];
 
 function Home() {
-  const [category, setCategory] = useState("d");
+  const [category, setCategory] = useState("");
 
   const imagesToRender = images.filter((image) => image.includes(category));
   return (
     <>
       <div className="home-container">
-        <div className="left">
+        <div className={!category ? "nav-tiles" : "hide-tiles"}>
           <button
             onClick={() => {
               setCategory("d");
@@ -74,14 +75,19 @@ function Home() {
             Pillows & Cushions
           </button>
         </div>
-        <div className="right">
-          {imagesToRender.map((item) => {
+        <div className={category ? "gallery" : "gallery-hidden"}>
+          <Carousel
+            category={category}
+            setCategory={setCategory}
+            data={imagesToRender}
+          />
+          {/* {imagesToRender.map((item) => {
             return (
               <article className="tile">
                 <img key={item} src={item} className="pic"></img>
               </article>
             );
-          })}
+          })} */}
         </div>
       </div>
     </>
