@@ -64,7 +64,7 @@ function Home() {
             }}
             className="cat-nav"
           >
-            Shades and Blinds
+            Shades & Blinds
           </button>
           <button
             onClick={() => {
@@ -81,13 +81,6 @@ function Home() {
             setCategory={setCategory}
             data={imagesToRender}
           />
-          {/* {imagesToRender.map((item) => {
-            return (
-              <article className="tile">
-                <img key={item} src={item} className="pic"></img>
-              </article>
-            );
-          })} */}
         </div>
       </div>
     </>
