@@ -13,9 +13,9 @@ function Nav() {
           <NavLink to="/about" className="navlink">
             ABOUT
           </NavLink>
-          <NavLink to="/portfolio" className="navlink">
+          {/* <NavLink to="/portfolio" className="navlink">
             PORTFOLIO
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/quote" className="navlink">
             REQUEST QUOTE
           </NavLink>

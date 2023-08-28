@@ -77,6 +77,7 @@ body {
 
 .cat-nav:hover {
   scale: 1.1;
+  transition: all 0.3s;
 }
 @media (max-width: 1275px) {
   .cat-nav {
@@ -273,12 +274,15 @@ form {
 
   .slide {
     margin-top: 3rem;
+    position: relative;
     display: flex;
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 0 0 3px;
-    max-height: 40rem;
-    position: relative;
+    height: 40rem;
+    img {
+      max-height: 40rem;
+    }
   }
 
   .slide-hidden {
